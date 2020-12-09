@@ -2,11 +2,27 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+     <!-- <router-link to="/about">About</router-link> |
+      <router-link to="/contacts">Contacts</router-link>|
+      <router-link to="/product/1">Produit1</router-link>|
+      <router-link to="/product/42">Univers</router-link>|
+      <router-link :to="{name: 'product', params: {id: 5}}">New</router-link> -->
     </div>
     <router-view/>
+
   </div>
 </template>
+
+<script>
+export default {
+  name: 'App',
+  data() {
+    return {
+      routeName: 'About',
+    };
+  },
+};
+</script>
 
 <style>
 #app {
@@ -27,6 +43,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #a342b9;
 }
 </style>
