@@ -1,5 +1,6 @@
 <template>
 <div>
+
   <h1>Product page {{$route.params.id}}</h1>
   <button @click="redirect">Click Me</button>
 </div>

@@ -2,8 +2,9 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
+      <router-link to="/contacts">Contacts</router-link>
      <!-- <router-link to="/about">About</router-link> |
-      <router-link to="/contacts">Contacts</router-link>|
+      |
       <router-link to="/product/1">Produit1</router-link>|
       <router-link to="/product/42">Univers</router-link>|
       <router-link :to="{name: 'product', params: {id: 5}}">New</router-link> -->

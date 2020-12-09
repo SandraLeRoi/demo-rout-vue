@@ -3,7 +3,9 @@
     <h2>{{movie.title}}</h2>
     <h3>{{movie.director}}</h3>
     <h3>{{movie.release_date}}</h3>
-    <p>{{movie.opening_crawl}}</p>
+    <div class="intro">
+      <marquee direction="up" scrollamount="1" height="500" >{{movie.opening_crawl}}</marquee>
+    </div>
   </div>
 </template>
 
@@ -31,8 +33,13 @@ export default {
 </script>
 
 <style scoped>
-p {
-  white-space: pre-wrap;
-}
 
+.intro{
+
+  white-space: pre-wrap;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+}
 </style>
